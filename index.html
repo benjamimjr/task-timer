@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Task Timer</title>
+    <link href="themes/BlackJet.css" rel="stylesheet"/>
+    <link href="TaskTimer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+    <script type="text/javascript" src="scripts/taskTimer.utils.js"></script>
+    <script type="text/javascript" src="scripts/taskTimer.model.js"></script>
+    <script type="text/javascript" src="scripts/taskTimer.ui.js"></script>
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icon-iphone-114.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />  
+    <link rel="apple-touch-startup-image" href="iphone-splash.png">
+</head>
+<body>
+    <div id="tasksPage" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <a href="#" id="editAllTasksButton" data-role="button" data-theme="c" data-mini="true">Edit</a>
+            <h1>Task Timer</h1>
+            <a href="#addTaskDialog" id="addTaskButton" data-role="button" data-icon="plus" data-iconpos="notext"  data-transition="slideup" data-theme="c">Add</a>
+        </div>
+        <div class="emptyTaskListBanner">No Tasks</div>
+        <div data-role="content" data-theme="a" style="display:none">
+            <ul id="taskList" data-role="listview" data-split-icon="arrow-r" data-split-theme="a">
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+            <a href="http://www.blackjetsoftware.com" data-role="none" target="_blank">BlackJet Software</a>
+        </div>
+    </div>
+    <div id="addTaskDialog" data-role="page" data-theme="a">
+        <div data-role="header">
+            <a href="#tasksPage" data-role="button" data-rel="back" data-mini="true" data-theme="c">Cancel</a>
+            <h1>Add Task</h1>
+            <a href="#tasksPage" id="addTaskSaveButton" data-role="button" data-rel="back" data-mini="true" data-theme="b">Done</a>
+        </div>
+        <div data-role="content">
+            <form id="addTaskDialogForm">
+                <div data-role="fieldcontain">
+                    <label for="addTaskName">Name:</label>
+                    <input type="text" name="addTaskName" id="addTaskName" value="" data-theme="b" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="editTaskDialog" data-role="page" data-theme="a">
+        <div data-role="header">
+            <a href="#tasksPage" id="editTaskSaveButton" data-role="button" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-mini="true" data-theme="c">Tasks</a>
+            <h1>Edit Task</h1>
+            
+        </div>
+        <div data-role="content">
+            <form id="editTaskDialogForm">
+                <input type="text" name="editTaskName" id="editTaskName" value="" data-theme="b" data-clear-btn="true"/>
+                <ul id="durationPeriods" data-role="listview" data-inset="true">
+                </ul>
+                <button id="clearTaskTimesButton" type="button" data-theme="d">Clear</button>
+            </form>
+            
+            <div id="clearTaskPeriodsConfirmation">
+                <div data-role="content">
+                <a href="#" data-role="button" data-theme="d" id="confirmClearTimesButton">Clear All Periods</a>
+                <a href="#" data-role="button" data-theme="c" id="cancelClearTimesButton">Cancel</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

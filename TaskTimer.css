@@ -1,0 +1,368 @@
+﻿body
+{
+    background-color: #000 !important;
+}
+
+.ui-header > .ui-btn.ui-mini
+{
+    margin-top: 3px;
+}
+
+    .ui-header > .ui-btn.ui-mini .ui-btn-inner
+    {
+        padding: 4px 10px;
+    }
+
+    .ui-header > .ui-btn.ui-mini.ui-btn-icon-left .ui-btn-inner
+    {
+        padding: 4px 10px 4px 24px;
+    }
+
+.ui-icon-alt .ui-btn
+{
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.ui-icon-alt .ui-icon
+{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ui-input-clear
+{
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    border-color: #999;
+    background-color: #333;
+    background-image: -webkit-linear-gradient(top, #666, #ddd);
+}
+
+ul#taskList li .taskName
+{
+    color: #aaa;
+    display: inline-block;
+    letter-spacing: -1px;
+}
+
+ul#taskList li .duration
+{
+    color: #aaa;
+    text-shadow: none;
+    background-image: -webkit-linear-gradient(top, #fff, #eee);
+    border: 1px solid #ccc;
+    font-weight: normal;
+    z-index: 2;
+}
+
+.duration .hours, .duration .minutes
+{
+    font-weight: bold;
+}
+
+.duration .seconds
+{
+    font-weight: normal;
+}
+
+ul#taskList li.activeTask
+{
+    background-color: #000;
+    border: 1px solid #512512;
+    -webkit-animation: pulseBackground 1.5s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+    ul#taskList li.activeTask .ui-btn-inner
+    {
+        border: 0;
+    }
+
+    ul#taskList li.activeTask a
+    {
+        background-color: transparent;
+        background-image: none;
+        border: 0;
+    }
+
+    ul#taskList li.activeTask .taskName
+    {
+        color: #fff;
+    }
+
+    ul#taskList li.activeTask .ui-btn-text
+    {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    ul#taskList li.activeTask .duration
+    {
+        color: #fff;
+        text-shadow: none;
+        background-color: #E36630;
+        background-image: -webkit-linear-gradient(top, #E36630, #8A3F1F);
+        border: 1px solid #512512;
+    }
+
+@-webkit-keyframes pulseBackground
+{
+    0%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.50), rgba(138, 63, 31, 0.50));
+    }
+
+    5%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.55), rgba(138, 63, 31, 0.55));
+    }
+
+    10%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.60), rgba(138, 63, 31, 0.60));
+    }
+
+    15%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.65), rgba(138, 63, 31, 0.65));
+    }
+
+    20%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.70), rgba(138, 63, 31, 0.70));
+    }
+
+    25%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.75), rgba(138, 63, 31, 0.75));
+    }
+
+    30%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.80), rgba(138, 63, 31, 0.80));
+    }
+
+    35%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.85), rgba(138, 63, 31, 0.85));
+    }
+
+    40%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.90), rgba(138, 63, 31, 0.90));
+    }
+
+    45%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.95), rgba(138, 63, 31, 0.95));
+    }
+
+    50%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 1.00), rgba(138, 63, 31, 1.00));
+    }
+
+    55%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.95), rgba(138, 63, 31, 0.95));
+    }
+
+    60%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.90), rgba(138, 63, 31, 0.90));
+    }
+
+    65%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.85), rgba(138, 63, 31, 0.85));
+    }
+
+    70%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.80), rgba(138, 63, 31, 0.80));
+    }
+
+    75%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.75), rgba(138, 63, 31, 0.75));
+    }
+
+    80%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.70), rgba(138, 63, 31, 0.70));
+    }
+
+    85%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.65), rgba(138, 63, 31, 0.65));
+    }
+
+    90%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.60), rgba(138, 63, 31, 0.60));
+    }
+
+    95%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.55), rgba(138, 63, 31, 0.55));
+    }
+
+    100%
+    {
+        background-image: -webkit-linear-gradient(top, rgba(227, 102, 48, 0.50), rgba(138, 63, 31, 0.50));
+    }
+}
+
+#tasksPage .ui-footer-fixed
+{
+    text-align: center;
+    padding: 6px;
+}
+
+    #tasksPage .ui-footer-fixed a
+    {
+        color: rgb(18, 25, 33);
+        text-shadow: rgb(150, 172, 203) 0px 0px 8px;
+        text-decoration: none;
+    }
+
+        #tasksPage .ui-footer-fixed a:hover
+        {
+            color: #E36630;
+        }
+
+ul#durationPeriods li
+{
+    height: 2em;
+}
+
+    ul#durationPeriods li .periodRange
+    {
+        font-size: 12px;
+        font-weight: normal;
+        color: #666;
+        float: left;
+        width: 70%;
+    }
+
+
+    ul#durationPeriods li .duration
+    {
+        float: right;
+        text-align: right;
+        width: 25%;
+    }
+
+.taskDeleteButtonContainer
+{
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    right: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    z-index: 10;
+    background-image: -webkit-linear-gradient(left, rgba(204, 204, 204, 0) 0, rgba(204, 204, 204, 1) 20px);
+}
+
+.activeTask .taskDeleteButtonContainer
+{
+    background-image: -webkit-linear-gradient(left, rgba(138, 63, 31, 0) 0, rgba(138, 63, 31, 1.00) 20px);
+}
+
+.taskDeleteButtonContainer button
+{
+    height: 60%;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    font-size: 13px;
+    padding: 4px 12px;
+    border: 1px solid #333;
+}
+
+.activeTask .taskDeleteButtonContainer button
+{
+    box-shadow: rgba(227, 102, 48, 0.75) 0 0 10px;
+}
+
+#taskList li .textFadeOut
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-image: -webkit-linear-gradient(right, rgba(204, 204, 204, 1) 0, rgba(204, 204, 204, 1) 75px, rgba(204, 204, 204, 0) 220px);
+}
+
+#taskList li.activeTask .textFadeOut
+{
+    background-image: -webkit-linear-gradient(right, rgba(138, 63, 31, 1.00) 0, rgba(138, 63, 31, 1.00) 75px, rgba(138, 63, 31, 0) 220px);
+}
+
+#fullPageVeil
+{
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#clearTaskPeriodsConfirmation
+{
+    padding: 2px;
+    border-top: 1px solid #666;
+    width: 100%;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1.00) 0, rgba(196, 196, 196, 1.00) 2px, rgba(81, 81, 81, 0.9) 35px, rgba(81, 81, 81, 0.9) 100%);
+    z-index: 100;
+}
+
+    #clearTaskPeriodsConfirmation .ui-content
+    {
+        padding: 2px 6px;
+    }
+
+    #clearTaskPeriodsConfirmation .ui-btn
+    {
+        margin: 20px 6px;
+        border: 3px solid #363636;
+        border-radius: 10px;
+    }
+
+    #clearTaskPeriodsConfirmation .ui-btn-inner
+    {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+
+.emptyTaskListBanner
+{
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 150px;
+    font-size: 18px;
+}
+
+.spinnableDeleteButton
+{
+    display: inline-block;
+    position: absolute;
+    left: -26px;
+    z-index: 2000;
+}
+
+    .spinnableDeleteButton .spinnableDeleteIcon
+    {
+        text-indent: 0; /* Hack: Used to track rotation angle (in degrees)*/
+    }
+    
+#taskList .ui-li-link-alt
+{
+    right: -42px;
+}
+
+#taskList .ui-li-count
+{
+    right: 10px;
+}
